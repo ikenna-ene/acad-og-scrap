@@ -80,7 +80,7 @@ async function setupCronJobs() {
   cron.schedule(
     "0 22 * * *",
     async () => {
-      console.log("🌅 10:00 PM - proceeding to schedule academy-pos scrapper");
+      console.log("🌅 10:00 PM - proceeding to run academy-pos scrapper..");
       await runAndExit(academy, "academy-pos");
     },
     { scheduled: true, timezone: "Africa/Lagos" }
